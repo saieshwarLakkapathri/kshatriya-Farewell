@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresher & Farewell Party</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+     <h1 id="clg-name"> kshatriya collge of engineering armur</h1>   
+    </div>
+    <div class="clg-photo">
+        <img src="kcea.png" id="College-Photo">
+    </div>
+
+<div class="container">
+    <h2 id="welcome"> Welcome to the KCEA Fresher cum Farewell Party! </h2>
+
+    <!-- Countdown Timer -->
+    <h2 id="es">Event Starts In:</h2>
+    <div class="countdown" id="countdown">00:00:00:00</div>
+    <section class="event-address">
+        <h2><i class="fa-solid fa-location-dot"></i> Event Location</h2>
+        <p><strong>Venue:</strong> Tirumala gardens function hall</p>
+        <p><strong>Date & Time:</strong> february 25, 2025 - 10:00 AM</p>
+        <p><strong>Address:</strong> Armur, Nizamabad</p>
+    </section>
+        
+
+    <!-- Polls & Voting -->
+    <div class="poll-section">
+        <h2>Vote for the Best!</h2>
+        <p><strong>Best performance:</strong></p>
+        <button id="dancerBtn" onclick="vote('dancer')"> Vote</button> <span id="dancerVotes">0</span> votes
+        </div>
+
+    <!-- Best Students Section -->
+    <div class="best-students">
+        <h2> Best Student of the Year award Recieved by <i class="fa-solid fa-trophy"></i>
+        </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+
+    <!-- Photo & Video Highlights -->
+    <div class="highlights">
+        <h2><i class="fa-solid fa-burst"></i> <i class="fa-solid fa-champagne-glasses"></i> Party Highlights</h2>
+        <video controls>
+            <source src="party-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <button class="toggle-btn" onclick="toggleMode()">Mode</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
